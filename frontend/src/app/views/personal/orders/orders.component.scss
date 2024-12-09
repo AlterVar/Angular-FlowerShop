@@ -1,0 +1,100 @@
+@import "../../../../assets/styles/variables";
+@import "../../../../assets/styles/mixins";
+@import "../../../../assets/styles/personal";
+
+.orders {
+  padding: 50px 0 156px;
+
+  .container {
+    font-size: 16px;
+
+    .orders-title {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      color: $gray-text-color;
+      margin-bottom: 14px;
+    }
+
+    .orders-title-additional {
+      color: $gray-text-color;
+      margin-bottom: 67px;
+    }
+
+    .orders-empty {
+      margin-top: 20px;
+      margin-bottom: 100px;
+
+      div {
+        @include header-lora-36;
+        font-size: 16px;
+      }
+
+      .btn {
+        width: 255px;
+        margin-top: 10px;
+      }
+    }
+
+    .orders-list {
+      .orders-list-item {
+        border-bottom: 1px solid #e7f1e8;
+        padding-bottom: 46px;
+        margin-bottom: 47px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        &:last-child {
+          border-bottom: 0;
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+
+        .orders-list-item-number {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 20px;
+          text-decoration-line: underline;
+          color: #111;
+          width: 297px;
+          margin-right: 20px;
+        }
+        .orders-list-item-products {
+          margin-right: 20px;
+          width: 509px;
+          color: #adadad;
+
+          .orders-list-item-products-count {
+            margin-bottom: 12px;
+          }
+          .orders-list-item-products-list tr td:first-child{
+            padding-left: 10px;
+            padding-right: 30px;
+          }
+        }
+
+        .orders-list-item-status {
+          border: 1px solid #456f49;
+          padding: 8px 24px;
+          text-align: center;
+          border-radius: 50px;
+          box-sizing: border-box;
+          background-color: transparent;
+          color: #456f49;
+        }
+
+        .orders-list-item-price {
+          width: 186px;
+          text-align: right;
+          font-style: normal;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 600;
+          font-size: 22px;
+          color: $gray-text-color;
+        }
+      }
+    }
+  }
+}
